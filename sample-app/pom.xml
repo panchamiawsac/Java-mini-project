@@ -21,7 +21,7 @@
         <repository>
             <id>nexus</id>
             <name>Nexus Release Repository</name>
-            <url>http://3.81.44.100:8081/repository/maven-releases-java-mini-project/</url>
+            <url>http://13.217.1.121:8081/repository/maven-releases-java-mini-project/</url>
         </repository>
     </distributionManagement>
 
