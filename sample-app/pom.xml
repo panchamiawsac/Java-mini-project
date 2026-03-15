@@ -4,6 +4,7 @@
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
+
     <groupId>com.example</groupId>
     <artifactId>sample</artifactId>
     <version>1.0.0</version>
@@ -14,6 +15,15 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <!-- Nexus Repository Configuration -->
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>Nexus Release Repository</name>
+            <url>http://3.81.44.100:8081/repository/maven-releases-java-mini-project/</url>
+        </repository>
+    </distributionManagement>
 
     <dependencies>
         <!-- Jakarta Servlet API -->
@@ -27,7 +37,9 @@
 
     <build>
         <finalName>sample</finalName>
+
         <plugins>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -42,7 +54,8 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.4.0</version>
             </plugin>
+
         </plugins>
     </build>
-</project>
 
+</project>
